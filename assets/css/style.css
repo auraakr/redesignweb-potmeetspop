@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Modak&display=swap');
+
+:root {
+    --primary-color: #132F19;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.modak-lg {
+    font-family: "Modak", system-ui;
+    font-weight: 400;
+    font-size: 64px;
+    width: 229px;
+}
+
+.modak-sm {
+    font-family: "Modak", system-ui;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.lexend-lg {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 24px;
+}
+
+.lexend-sm {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 16px;
+}
+
+.text-ijo {
+    color: var(--primary-color);
+}
+
+.button {
+    padding: 8px 20px;
+    border: 2px solid white;
+    color: white;
+    border-radius: 100px;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.bg-ijo {
+    background-color: var(--primary-color);
+}
+
+.button:hover, .button-black:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* .hero {
+    background-image: url(../img/SS19.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+} */
+
+.hero-title {
+    position: absolute;
+    bottom: 0;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+}
+
+.bg-hero {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(0.7);
+}
+
+.navbar {
+    transition: all 0.5s;
+}
+
+.navbar-scrolled {
+    background-color: var(--primary-color);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    color: white;
+}
+
+.about {
+    background-color: var(--primary-color);
+}
+
+.about .lexend-lg {
+    line-height: 1.5;
+}
+
+.section2 img {
+    width: 100vw;
+    border-radius: 24px;
+}
+
+.section2 img:hover {
+    opacity: 0.7;
+}
+
+a h2 {
+    color: black;
+    text-decoration: none;
+}
+
+.card img {
+    border-radius: 100px;
+}
+
+.button-ijo {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.button-black {
+    border-radius: 6px;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.navbar-collapse {
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+}
+
+.navbar-toggler, .navbar-brand {
+    z-index: 1;
+}
+
+.season img {
+    width: 100vw;
+}
+
+.containers {
+    width: 100%;
+    columns: 2;
+}
+
+.containers .store {
+    margin-bottom: 1em;
+}
+
+.containers .store img {
+    width: 100%;
+    border-radius: 0.5em;
+}
+
+.container .store img:hover {
+    opacity: 0.7;
+}
+
+.fa-solid {
+    color: #d22d3d;
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+    .modak-lg {
+        font-size: 54px;
+    }
+    .containers {
+        columns: 3;
+    }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+    .modak-lg {
+        font-size: 64px;
+    }
+    .containers {
+        columns: 4;
+    }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+    .modak-lg {
+        font-size: 64px;
+    }
+    .containers {
+        columns: 4;
+    }
+}
